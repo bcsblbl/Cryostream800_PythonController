@@ -1,6 +1,11 @@
 # Python Controller for Oxford CryoSystems 800 Series CryoStream
 
-This repository contains the Python controller for the Oxford CryoSystems 800 Series CryoStream, a device designed to facilitate precise temperature control in scientific experiments. The controller is written in Python and offers a range of functionalities specific to the CryoStream 800 series.
+This repository contains the Python controller for the Oxford CryoSystems 800 Series CryoStream, a device designed to facilitate precise temperature control in scientific experiments. The controller is written in Python2.7 and offers a range of functionalities specific to the CryoStream 800 series.
+
+## Authors
+
+- John Taylor, Berkeley Center for Structural Biology, Berkeley National Laboratory (jrtaylor_at_lbl.gov)
+- Gabriel Gazolla, Berkeley Center for Structural Biology, Berkeley National Laboratory (gabrielgazolla_at_lbl.gov)
 
 ## Getting Started
 
