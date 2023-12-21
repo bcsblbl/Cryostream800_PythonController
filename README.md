@@ -6,6 +6,10 @@ This repository contains the Python controller for the Oxford CryoSystems 800 Se
 <img src="https://pharma-se.ru/upload/iblock/91b/91b9381f29bae53c6b2064fdbb1c7447.jpg" width="50%" height="auto">
 </div>
 
+<div align="center">
+<img src="https://github.com/bcsblbl/Cryostream800_PythonController/blob/main/cryostream800.png?raw=true" width="50%" height="auto">
+</div>
+
 ## Authors
 
 - **John Taylor**, Berkeley Center for Structural Biology, Berkeley National Laboratory (jrtaylor_at_lbl.gov)
