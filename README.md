@@ -86,6 +86,10 @@ This approach ensures reliability in command execution, as it verifies whether t
 
 While this code is primarily designed for Python 2.7, porting it to other Python versions should be relatively straightforward. It may involve modifying only a few lines of code. However, it's important to note that for this specific project, the use of Python 2.7 was a required condition.
 
+## Acknowledgments
+
+Thanks to **James Holton** (LBL), **Scott Classen** (LBL), and **George Meigs** (LBL) for their assistance in understanding protocol details of the devices with practical examples.
+
 ## Contributing
 
 Contributions are welcome. Please email us.
