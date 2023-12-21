@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Cryostream -->
+<COOLER name="Cryostream">
+
+	<!-- Command set -->
+	<LIST_OF_COMMANDS>
+		<!-- Restart -->
+		<COMMAND id="10" name="Restart" params="0">
+			<DESCRIPTION>Restart cooler after shut down</DESCRIPTION>
+		</COMMAND>
+		<!-- Ramp -->
+		<COMMAND id="11" name="Ramp" params="2">
+			<DESCRIPTION>Change to new temperature at a controlled rate</DESCRIPTION>
+			<PARAM name="Ramp rate" min="0" max="360" units="K/hour" outputunits="K/hour"></PARAM>
+			<PARAM name="Temp" min="Min temp" max="Max temp" units="K" outputunits="cK"></PARAM>
+		</COMMAND>
+		<!-- Plat -->
+		<COMMAND id="12" name="Plat" params="1">
+			<DESCRIPTION>Hold current temperature for a specified period</DESCRIPTION>
+			<PARAM name="Duration" min="1" max="1440" units="min" outputunits="min"></PARAM>
+		</COMMAND>
+		<!-- Hold -->
+		<COMMAND id="13" name="Hold" params="0">
+			<DESCRIPTION>Hold current temperature indefinitely</DESCRIPTION>
+		</COMMAND>
+		<!-- Cool -->
+		<COMMAND id="14" name="Cool" params="1">
+			<DESCRIPTION>Change to new temperature as quickly as possible</DESCRIPTION>
+			<PARAM name="Temp" min="Min temp" max="Max temp" units="K" outputunits="cK"></PARAM>
+		</COMMAND>
+		<!-- End -->
+		<COMMAND id="15" name="End" params="1">
+			<DESCRIPTION>Ramp to 300 K at a specified rate and then shut down</DESCRIPTION>
+			<PARAM name="Ramp rate" min="1" max="360" units="K/hour" outputunits="K/hour"></PARAM>
+		</COMMAND>
+		<!-- Purge -->
+		<COMMAND id="16" name="Purge" params="0">
+			<DESCRIPTION>Gas flow is stopped and cooler warms to room temperature</DESCRIPTION>
+		</COMMAND>
+		<!-- Pause -->
+		<COMMAND id="17" name="Suspend" params="0">
+			<DESCRIPTION>Enter temporary Hold</DESCRIPTION>
+		</COMMAND>
+		<!-- Resume -->
+		<COMMAND id="18" name="Resume" params="0">
+			<DESCRIPTION>Exit temporary Hold</DESCRIPTION>
+		</COMMAND>
+		<!-- Stop -->
+		<COMMAND id="19" name="Stop" params="0">
+			<DESCRIPTION>Stop cooler immediately</DESCRIPTION>
+		</COMMAND>
+		
+		<!-- Turbo -->
+		<COMMAND id="20" name="Turbo" params="1">
+			<DESCRIPTION>Engage or disengage Turbo gas flow</DESCRIPTION>
+			<PARAM name="Turbo" min="0" max="1" units="" outputunits="">
+				<OPTION value="0">Off</OPTION>
+				<OPTION value="1">On</OPTION>
+			</PARAM>
+		</COMMAND>
+		
+		<!-- Regen -->
+		<COMMAND id="21" name="Regen" params="0">
+			<DESCRIPTION>Regenerate Cryosorb to restore vacuum performance - see manual for details</DESCRIPTION>
+		</COMMAND>
+		
+		<!-- Autofill -->
+		<COMMAND id="202" name="Set Autofill mode" params="1">
+			<DESCRIPTION>Control Autofill behaviour</DESCRIPTION>
+			<PARAM name="Mode" min="0" max="2" units="" outputunits="">
+				<OPTION value="0">Manual</OPTION>
+				<OPTION value="1">Auto</OPTION>
+				<OPTION value="2">Scheduled</OPTION>				
+			</PARAM>
+		</COMMAND>
+		<COMMAND id="203" name="Set Autofill refill level" params="1">
+			<DESCRIPTION>Set Autofill refill level</DESCRIPTION>
+			<PARAM name="Level" min="20" max="40" units="%" outputunits="%"></PARAM>
+		</COMMAND>			
+		<COMMAND id="204" name="Set Autofill stop level" params="1">
+			<DESCRIPTION>Set Autofill stop level</DESCRIPTION>
+			<PARAM name="Level" min="60" max="80" units="%" outputunits="%"></PARAM>
+		</COMMAND>		
+		
+		<!-- Interrupt flow / anneal -->
+		<COMMAND id="120" name="Set flow interrupt time" params="1">
+			<DESCRIPTION>Set the time for which the flow will be interrupted before calling Interrupt flow now</DESCRIPTION>
+			<PARAM name="Time" min="1" max="600" units="ds" outputunits="ds"></PARAM>
+		</COMMAND>			
+		<COMMAND id="121" name="Interrupt flow now" params="0">
+			<DESCRIPTION>Interrupt the flow for the time specified by a call to Set flow interrupt time</DESCRIPTION>
+		</COMMAND>		
+		
+		<COMMAND id="122" name="Run shield" params="1">
+			<DESCRIPTION>Turn the shield flow on or off</DESCRIPTION>
+			<PARAM name="Flow" min="0" max="65535" units="" outputunits="">
+				<OPTION value="0">Off</OPTION>
+				<OPTION value="1">On</OPTION>
+			</PARAM>
+		</COMMAND>	
+		
+		<COMMAND id="123" name="Set idle shield flow mode" params="1">
+			<DESCRIPTION>Control shield flow when the device is idle</DESCRIPTION>
+			<PARAM name="Mode" min="0" max="2" units="" outputunits="">
+				<OPTION value="0">Always off </OPTION>
+				<OPTION value="1">Always on</OPTION>
+				<OPTION value="2">Auto</OPTION>
+			</PARAM>
+		</COMMAND>			
+		
+		<!-- Start firmware update utilty -->
+		<COMMAND id="5" name="Check for firmware updates" params="0">
+			<DESCRIPTION>Start the Firmware Update Utility</DESCRIPTION>
+		</COMMAND>	
+		
+		<!-- Put the cooler into bootloader mode -->
+		<COMMAND id="66" name="Update firmware" params="2">
+			<DESCRIPTION>Enter bootloader mode</DESCRIPTION>
+			<PARAM name="Password" min="8834" max="8834" units="" outputunits=""></PARAM>
+			<PARAM name="Processor" min="1" max="65535" units="" outputunits="">
+				<OPTION value="1">Motherboard</OPTION>
+				<OPTION value="2">Display</OPTION>
+				<OPTION value="3">Relay board</OPTION>
+				<OPTION value="5">Flow controller</OPTION>
+			</PARAM>
+		</COMMAND>		
+		
+		<!-- Send a basic command - used below -->
+		<COMMAND id="252" name="Set parameter" params="2">
+			<DESCRIPTION>IP address, etc.</DESCRIPTION>
+			<PARAM name="Param Id" min="0" max="65535" units="" outputunits=""></PARAM>
+			<PARAM name="Value" min="0" max="65535" units="" outputunits=""></PARAM>
+		</COMMAND>
+		
+		<!-- Close com port-->
+		<COMMAND id="3" name="Close port" params="0">
+			<DESCRIPTION>Close communication port</DESCRIPTION>
+		</COMMAND>
+		
+		<!-- Start logfile viewer utilty -->
+		<COMMAND id="6" name="Logfile Viewer" params="0">
+			<DESCRIPTION>Start Logfile Viewer to view and analyse log files and send to Oxford Cryosystems</DESCRIPTION>
+		</COMMAND>	
+		
+		<!-- Start cryopad  utilty -->
+		<COMMAND id="7" name="Cryopad" params="0">
+			<DESCRIPTION>Start Cryopad to program a sequence of commands</DESCRIPTION>
+		</COMMAND>	
+		
+	</LIST_OF_COMMANDS>
+	
+	<LIST_OF_COMPOSITE_COMMANDS>
+		<!-- Write Ethernet settings -->
+		<COMPOSITE_COMMAND name="Ethernet settings" commands="2">
+			<DESCRIPTION>Write Ethernet settings</DESCRIPTION>
+			<COMMAND id="252" name="Set parameter" params="2">
+				<PARAM name="Param Id" min="0" max="65535" units="" outputunits="">1300</PARAM>
+				<PARAM name="Value" min="0" max="1" units="" outputunits=""></PARAM>
+			</COMMAND>
+			<COMMAND id="252" name="Set parameter" params="2">
+				<PARAM name="Param Id" min="0" max="65535" units="" outputunits="">1301</PARAM>
+				<PARAM name="Value" min="0" max="3" units="" outputunits=""></PARAM>
+			</COMMAND>
+			<COMMAND id="252" name="Set parameter" params="2">
+				<PARAM name="Param Id" min="0" max="65535" units="" outputunits="">1302</PARAM>
+				<PARAM name="Value" min="0" max="255" units="" outputunits=""></PARAM>
+			</COMMAND>
+			<COMMAND id="252" name="Set parameter" params="2">
+				<PARAM name="Param Id" min="0" max="65535" units="" outputunits="">1303</PARAM>
+				<PARAM name="Value" min="0" max="255" units="" outputunits=""></PARAM>
+			</COMMAND>
+			<COMMAND id="252" name="Set parameter" params="2">
+				<PARAM name="Param Id" min="0" max="65535" units="" outputunits="">1304</PARAM>
+				<PARAM name="Value" min="0" max="255" units="" outputunits=""></PARAM>
+			</COMMAND>
+			<COMMAND id="252" name="Set parameter" params="2">
+				<PARAM name="Param Id" min="0" max="65535" units="" outputunits="">1305</PARAM>
+				<PARAM name="Value" min="0" max="255" units="" outputunits=""></PARAM>
+			</COMMAND>
+			<COMMAND id="252" name="Set parameter" params="2">
+				<PARAM name="Param Id" min="0" max="65535" units="" outputunits="">1306</PARAM>
+				<PARAM name="Value" min="0" max="255" units="" outputunits=""></PARAM>
+			</COMMAND>
+			<COMMAND id="252" name="Set parameter" params="2">
+				<PARAM name="Param Id" min="0" max="65535" units="" outputunits="">1307</PARAM>
+				<PARAM name="Value" min="0" max="255" units="" outputunits=""></PARAM>
+			</COMMAND>
+			<COMMAND id="252" name="Set parameter" params="2">
+				<PARAM name="Param Id" min="0" max="65535" units="" outputunits="">1308</PARAM>
+				<PARAM name="Value" min="0" max="255" units="" outputunits=""></PARAM>
+			</COMMAND>
+			<COMMAND id="252" name="Set parameter" params="2">
+				<PARAM name="Param Id" min="0" max="65535" units="" outputunits="">1309</PARAM>
+				<PARAM name="Value" min="0" max="255" units="" outputunits=""></PARAM>
+			</COMMAND>
+			<COMMAND id="252" name="Set parameter" params="2">
+				<PARAM name="Param Id" min="0" max="65535" units="" outputunits="">1310</PARAM>
+				<PARAM name="Value" min="0" max="255" units="" outputunits=""></PARAM>
+			</COMMAND>
+		</COMPOSITE_COMMAND>
+	</LIST_OF_COMPOSITE_COMMANDS>
+
+	<!-- List of Buttons to be produced -->
+	<LIST_OF_BUTTONS>
+		<BUTTON name = "stopstart">
+			<STATE condition ="runMode LESS 1" disabled ="true"></STATE>
+			<STATE condition ="runMode GREATER= 1" disabled ="false"></STATE>
+			<STATE condition ="runMode GREATER 4" label = "'Restart'" disabled = "false">
+				<COMMAND name ="Restart"></COMMAND>
+			</STATE>
+			<STATE condition ="runMode LESS= 4" label ="'Stop'" disabled = "false">
+				<COMMAND name ="Stop"></COMMAND>
+			</STATE>
+		</BUTTON>
+
+		<BUTTON name = "coolto">
+			<STATE condition ="runMode == 2" disabled ="false"></STATE>
+			<STATE condition ="runMode != 2" disabled ="true"></STATE>
+			<STATE condition ="findPropertyValue('Default cool temp') LESS 0" label = "'Cool to '+convertAndFormatVal(100, 'K')">
+				<COMMAND name ="Cool">
+					<PARAM>100.0</PARAM>
+				</COMMAND>
+			</STATE>
+			<STATE condition ="findPropertyValue('Default cool temp') GREATER= 0" label = "'Cool to '+convertAndFormatVal(findPropertyValue('Default cool temp'), 'K')">
+				<COMMAND name = "Cool">
+					<PARAM>findPropertyValue('Default cool temp')</PARAM>
+				</COMMAND>
+			</STATE>
+		</BUTTON>
+
+	</LIST_OF_BUTTONS>
+
+	<!-- CryoConnector will modify Max temp for Plus -->
+	<LIST_OF_PROPERTIES>
+		<PROPERTY name="Min temp" units="K" outputunits="cK" startbyte="" endbyte="" id="1002">80</PROPERTY>
+		<PROPERTY name="Max temp" units="K" outputunits="cK" startbyte="" endbyte="" id="1003">400</PROPERTY>
+		<PROPERTY name="Device" units="" outputunits="" id="1000">1</PROPERTY>
+	</LIST_OF_PROPERTIES>
+
+	<!-- Additional info -->
+	<LIST_OF_INFO>
+		<INFO name="Device name"></INFO>
+		<INFO name="Device alias"></INFO>
+		<INFO name="Device status"></INFO>
+		<INFO name="Phase status"></INFO> 
+		<INFO name="Alarm status"></INFO>
+		<INFO name="Alarm level"></INFO>
+		<INFO name="CryoConnector"></INFO>
+		<INFO name="Server status"></INFO>
+		<INFO name="Computer name"></INFO>
+		<INFO name="Time stamp"></INFO>
+	</LIST_OF_INFO>
+
+	<!-- Phase Ids -->
+	<LIST_OF_PHASES>
+		<PHASE id="0">Ramp</PHASE>
+		<PHASE id="1">Cool</PHASE>
+		<PHASE id="2">Plat</PHASE>
+		<PHASE id="3">Hold</PHASE>
+		<PHASE id="4">End</PHASE>
+		<PHASE id="5">Purge</PHASE>
+		<PHASE id="6">Erase</PHASE>
+		<PHASE id="7">Load</PHASE>
+		<PHASE id="8">Save</PHASE>
+		<PHASE id="9">Purge</PHASE>
+		<PHASE id="10">Wait</PHASE>
+		<PHASE id="11">Regen</PHASE> 	
+		<PHASE id="12">Regen</PHASE> 
+	</LIST_OF_PHASES>
+
+	<!-- Run Modes -->
+	<LIST_OF_MODES>
+		<MODE id="0">Initialising</MODE>
+		<MODE id="1">Initialisation failed</MODE>
+		<MODE id="2">Ready</MODE>
+		<MODE id="3">Running</MODE>
+		<MODE id="4">Set up mode</MODE>
+		<MODE id="5">Shut down without error</MODE>
+		<MODE id="6">Shut down with error</MODE>
+	</LIST_OF_MODES>
+
+	<!-- Gas Types -->
+	<LIST_OF_GAS_TYPES>
+		<GAS id="0">None</GAS>
+		<GAS id="1">N2</GAS>
+		<GAS id="2">He</GAS>
+	</LIST_OF_GAS_TYPES>
+
+	<!-- Alarm Ids -->
+	<LIST_OF_ALARMS>
+		<ALARM id="0" level="0">No errors or warnings</ALARM>
+		<ALARM id="1" level="1">Stop pressed</ALARM>
+		<ALARM id="2" level="1">Stop command</ALARM>
+		<ALARM id="3" level="1">End complete</ALARM>
+		<ALARM id="4" level="1">Purge complete</ALARM>
+		<ALARM id="5" level="2">Temp warning</ALARM>
+		<ALARM id="6" level="2">Pressure warning</ALARM>
+		<ALARM id="7" level="2">Check vacuum</ALARM>
+		<ALARM id="8" level="4">Self-check fail</ALARM>
+		<ALARM id="9" level="4">Low flow rate</ALARM>
+		<ALARM id="10" level="4">Temp control error</ALARM>
+		<ALARM id="11" level="4">Gas type error</ALARM>
+		<ALARM id="12" level="4">Temp reading error</ALARM>
+		<ALARM id="13" level="4">Suct temp error</ALARM>
+		<ALARM id="14" level="4">Sensor fail</ALARM>
+		<ALARM id="15" level="3">Brownout</ALARM>
+		<ALARM id="16" level="4">Sink overheat</ALARM>
+		<ALARM id="17" level="4">PSU overheat</ALARM>
+		<ALARM id="18" level="4">Power loss</ALARM>
+		<ALARM id="19" level="4">Coldhead too cold</ALARM>
+		<ALARM id="20" level="4">Coldhead time out</ALARM>
+		<ALARM id="21" level="2">Cryodrive not found</ALARM>
+		<ALARM id="22" level="4">Cryodrive error</ALARM>
+		<ALARM id="23" level="4">No nitrogen</ALARM>
+		<ALARM id="24" level="4">No helium</ALARM>
+		<ALARM id="25" level="2">Vac gauge fail</ALARM>
+		<ALARM id="26" level="2">Vac reading error</ALARM>
+		<ALARM id="27" level="2">RS232 error</ALARM>
+		<ALARM id="28" level="2">Coldhead temp warning</ALARM>
+		<ALARM id="29" level="4">Coldhead temp error</ALARM>
+		<ALARM id="30" level="2">Do not open cryostat</ALARM>
+		<ALARM id="31" level="3">Do not open cryostat</ALARM>
+		<ALARM id="32" level="2">Disconnect sample sensor</ALARM>
+		<ALARM id="33" level="2">Cryostat open</ALARM>
+		<ALARM id="34" level="4">Cryostat open timeout</ALARM>
+		<ALARM id="35" level="2">High temp warning</ALARM>
+		<ALARM id="36" level="4">High temp error</ALARM>
+		<ALARM id="37" level="3">Cryodrive T sensor fault</ALARM>
+		<ALARM id="38" level="3">Cryodrive P sensor fault</ALARM>
+		<ALARM id="39" level="3">Cryodrive low T trip</ALARM>
+		<ALARM id="40" level="3">Cryodrive high T trip</ALARM>
+		<ALARM id="41" level="3">Cryodrive low P trip</ALARM>
+		<ALARM id="42" level="2">Cryodrive high T warning</ALARM>
+		<ALARM id="43" level="2">Cryodrive low P warning</ALARM>
+		<ALARM id="44" level="2">Connect gas supply</ALARM>
+		<ALARM id="45" level="3">Autofill fault</ALARM>
+		<ALARM id="46" level="1">Autofill about to fill</ALARM>
+		<ALARM id="47" level="2">Autofill filling</ALARM>
+		<ALARM id="48" level="4">Collar temp error</ALARM>
+		<ALARM id="49" level="4">Coldhead error</ALARM>
+		<ALARM id="50" level="1">Turbo flow</ALARM>
+		<ALARM id="51" level="1">He selected</ALARM>
+		<ALARM id="52" level="2">Cryodrive not ready</ALARM>
+		<ALARM id="53" level="2">Regen required</ALARM>
+		<ALARM id="54" level="1">Regen complete</ALARM>
+		<ALARM id="55" level="2">Connect vacuum</ALARM>
+		<ALARM id="56" level="2">Disconnect vacuum</ALARM>
+		<ALARM id="57" level="2">Connect sample sensor</ALARM>
+		<ALARM id="58" level="4">Relay board error</ALARM>
+		<ALARM id="59" level="1">Dry air maintenance</ALARM>
+		<ALARM id="60" level="2">Service required</ALARM>
+		<ALARM id="61" level="2">Low shield flow</ALARM>	
+		<ALARM id="62" level="1">Shield on</ALARM>
+	</LIST_OF_ALARMS>
+	
+
+</COOLER>

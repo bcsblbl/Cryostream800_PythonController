@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<OXCRYO_PROPERTIES>
+
+<LIST_OF_PROPERTIES>
+	<PROPERTY name="Device" units="" outputunits="" id="1000"></PROPERTY>
+	<PROPERTY name="Hardware" units="" outputunits="" id="1001"></PROPERTY>
+	<PROPERTY name="Min temp" units="cK" outputunits="K" id="1002"></PROPERTY>
+	<PROPERTY name="Max temp" units="cK" outputunits="K" id="1003"></PROPERTY>
+	<PROPERTY name="Control firmware" units="" outputunits="" id="1004"></PROPERTY>
+	<PROPERTY name="Peripherals" units="" outputunits="" id="1005"></PROPERTY>
+	<PROPERTY name="Smart mode" units="" outputunits="" id="1006"></PROPERTY>
+	<PROPERTY name="Test ADC 1" units="" outputunits="" id="1010"></PROPERTY>
+	<PROPERTY name="Test ADC 2" units="" outputunits="" id="1011"></PROPERTY>
+	<PROPERTY name="Test heater 1" units="" outputunits="" id="1012"></PROPERTY>
+	<PROPERTY name="Test heater 2" units="" outputunits="" id="1013"></PROPERTY>
+	<PROPERTY name="Test ADC 3" units="" outputunits="" id="1014"></PROPERTY>
+	<PROPERTY name="Test gas flow" units="" outputunits="" id="1015"></PROPERTY>
+	<PROPERTY name="Test EEPROM" units="" outputunits="" id="1016"></PROPERTY>
+	<PROPERTY name="Self-check" units="" outputunits="" id="1017"></PROPERTY>
+	<PROPERTY name="Test heater 3" units="" outputunits="" id="1018"></PROPERTY>
+	<PROPERTY name="Test ADC 4" units="" outputunits="" id="1019"></PROPERTY>
+	<PROPERTY name="ADC1 calibration R" units="" outputunits="" id="1020"></PROPERTY>
+	<PROPERTY name="ADC1 calibration SC" units="" outputunits="" id="1021"></PROPERTY>
+	<PROPERTY name="ADC2 calibration R" units="" outputunits="" id="1022"></PROPERTY>
+	<PROPERTY name="ADC2 calibration SC" units="" outputunits="" id="1023"></PROPERTY>
+	<PROPERTY name="ADC3 calibration R" units="" outputunits="" id="1024"></PROPERTY>
+	<PROPERTY name="ADC3 calibration SC" units="" outputunits="" id="1025"></PROPERTY>
+	<PROPERTY name="ADC4 calibration" units="" outputunits="" id="1026"></PROPERTY>
+	<PROPERTY name="Controller options" units="" outputunits="" id="1027"></PROPERTY>
+	<PROPERTY name="Controller number" units="" outputunits="" id="1028"></PROPERTY>
+	<PROPERTY name="Coldhead number" units="" outputunits="" id="1029"></PROPERTY>
+	<PROPERTY name="Commissioning date" units="" outputunits="" id="1030"></PROPERTY>
+	<PROPERTY name="Total hours" units="hour" outputunits="hour" id="1031"></PROPERTY>
+	<PROPERTY name="Default cool temp" units="cK" outputunits="K" id="1032"></PROPERTY>
+	<PROPERTY name="Temp units" units="" outputunits="" id="1033"></PROPERTY>
+	<PROPERTY name="Last shutdown" units="" outputunits="" id="1034"></PROPERTY>
+	<PROPERTY name="Sensor 1 number" units="" outputunits="" id="1035"></PROPERTY>
+	<PROPERTY name="Sensor 2 number" units="" outputunits="" id="1036"></PROPERTY>
+	<PROPERTY name="Sensor 3 number" units="" outputunits="" id="1037"></PROPERTY>
+	<PROPERTY name="Live ADC 1" units="" outputunits="" id="1040"></PROPERTY>
+	<PROPERTY name="Live ADC 2" units="" outputunits="" id="1041"></PROPERTY>
+	<PROPERTY name="Live ADC 3" units="" outputunits="" id="1042"></PROPERTY>
+	<PROPERTY name="Live ADC 4" units="" outputunits="" id="1043"></PROPERTY>
+	<PROPERTY name="Live heater 1" units="" outputunits="" id="1044"></PROPERTY>
+	<PROPERTY name="Live heater 2" units="" outputunits="" id="1045"></PROPERTY>
+	<PROPERTY name="Live heater 3" units="" outputunits="" id="1046"></PROPERTY>
+	<PROPERTY name="Set temp" units="cK" outputunits="K" id="1050"></PROPERTY>
+	<PROPERTY name="Sample temp" units="cK" outputunits="K" id="1051"></PROPERTY>
+	<PROPERTY name="Temp error" units="cK" outputunits="cK" id="1052"></PROPERTY>
+	<PROPERTY name="Run mode" units="" outputunits="" id="1053"></PROPERTY>
+	<PROPERTY name="Phase id" units="" outputunits="" id="1054"></PROPERTY>
+	<PROPERTY name="Ramp rate" units="K/hour" outputunits="K/hour" id="1055"></PROPERTY>
+	<PROPERTY name="Target temp" units="cK" outputunits="K" id="1056"></PROPERTY>
+	<PROPERTY name="Evap temp" units="cK" outputunits="K" id="1057"></PROPERTY>
+	<PROPERTY name="Suct temp" units="cK" outputunits="K" id="1058"></PROPERTY>
+	<PROPERTY name="Phase time remaining" units="min" outputunits="min" id="1059"></PROPERTY>
+	<PROPERTY name="Gas flow" units="dl/min" outputunits="l/min" id="1060"></PROPERTY>
+	<PROPERTY name="Gas heat" units="%" outputunits="%" id="1061"></PROPERTY>
+	<PROPERTY name="Evap heat" units="%" outputunits="%" id="1062"></PROPERTY>
+	<PROPERTY name="Average suct heat" units="%" outputunits="%" id="1063"></PROPERTY>
+	<PROPERTY name="Back pressure" units="cbar" outputunits="mbar" id="1064"></PROPERTY>
+	<PROPERTY name="Alarm code" units="" outputunits="" id="1065"></PROPERTY>
+	<PROPERTY name="Run time" units="min" outputunits="min" id="1066"></PROPERTY>
+	<PROPERTY name="Evap shift" units="%" outputunits="%" id="1067"></PROPERTY>
+	<PROPERTY name="Turbo mode" units="" outputunits="" id="1068"></PROPERTY>
+	<PROPERTY name="Average gas heat" units="%" outputunits="%" id="1069"></PROPERTY>
+	<PROPERTY name="Suct heat" units="%" outputunits="%" id="1070"></PROPERTY>
+	<PROPERTY name="Suspended" units="" outputunits="" id="1071"></PROPERTY>
+	<PROPERTY name="Received" units="" outputunits="" id="1072"></PROPERTY>
+	<PROPERTY name="Missed" units="" outputunits="" id="1073"></PROPERTY>
+	<PROPERTY name="Last shutdown" units="" outputunits="" id="1080"></PROPERTY>
+	<PROPERTY name="Last run time" units="min" outputunits="min" id="1081"></PROPERTY>
+	<PROPERTY name="Error shutdown" units="" outputunits="" id="1082"></PROPERTY>
+	<PROPERTY name="Error run time" units="min" outputunits="min" id="1083"></PROPERTY>
+	<PROPERTY name="Error sample temp" units="cK" outputunits="K" id="1084"></PROPERTY>
+	<PROPERTY name="Error set temp" units="cK" outputunits="K" id="1085"></PROPERTY>
+	<PROPERTY name="Error temp 2" units="cK" outputunits="K" id="1086"></PROPERTY>
+	<PROPERTY name="Error temp 3" units="cK" outputunits="K" id="1087"></PROPERTY>
+	<PROPERTY name="Error heater 1" units="%" outputunits="%" id="1088"></PROPERTY>
+	<PROPERTY name="Error heater 2" units="%" outputunits="%" id="1089"></PROPERTY>
+	<PROPERTY name="Error heater 3" units="%" outputunits="%" id="1090"></PROPERTY>
+	<PROPERTY name="Error gas flow" units="cl/min" outputunits="l/min" id="1091"></PROPERTY>
+	<PROPERTY name="Error back pressure" units="mbar" outputunits="mbar" id="1092"></PROPERTY>
+	<PROPERTY name="Error ADC1" units="" outputunits="" id="1093"></PROPERTY>
+	<PROPERTY name="Error ADC2" units="" outputunits="" id="1094"></PROPERTY>
+	<PROPERTY name="Error ADC3" units="" outputunits="" id="1095"></PROPERTY>
+	<PROPERTY name="Error ADC4" units="" outputunits="" id="1096"></PROPERTY>
+	<PROPERTY name="Error cryodrive speed" units="rpm" outputunits="rpm" id="1097"></PROPERTY>
+	<PROPERTY name="Error cryodrive state" units="" outputunits="" id="1098"></PROPERTY>
+
+	<PROPERTY name="FC Gas flow" units="cl/min" outputunits="l/min" id="1100"></PROPERTY>
+	<PROPERTY name="FC Back pressure" units="mbar" outputunits="mbar" id="1101"></PROPERTY>
+	<PROPERTY name="FC Supply pressure" units="mbar" outputunits="mbar" id="1102"></PROPERTY>
+	<PROPERTY name="FC Valve opening" units="%" outputunits="%" id="1103"></PROPERTY>
+	<PROPERTY name="FC Firmware" units="" outputunits="" id="1104"></PROPERTY>
+	<PROPERTY name="FC Serial" units="" outputunits="" id="1105"></PROPERTY>
+	<PROPERTY name="FC Outer flow" units="cl/min" outputunits="l/min" id="1106"></PROPERTY>
+	<PROPERTY name="FC Selected gas" units="" outputunits="" id="1107"></PROPERTY>
+	<PROPERTY name="FC Detected gas" units="" outputunits="" id="1108"></PROPERTY>
+	<PROPERTY name="FC Device type" units="bits" outputunits="bits" id="1109"></PROPERTY>
+	<PROPERTY name="FC Calibration" units="bits" outputunits="bits" id="1110"></PROPERTY>
+	<PROPERTY name="FC Outer valve" units="%" outputunits="%" id="1111"></PROPERTY>
+	<PROPERTY name="FC Flow set point" units="cl/min" outputunits="l/min" id="1112"></PROPERTY>
+	<PROPERTY name="FC Outer set point" units="cl/min" outputunits="l/min" id="1113"></PROPERTY>
+	<PROPERTY name="FC Protocol" units="" outputunits="" id="1114"></PROPERTY>
+	<PROPERTY name="FC Interrupt time" units="ds" outputunits="s" id="1115"></PROPERTY>
+	<PROPERTY name="FC Interrupt state" units="" outputunits="" id="1116"></PROPERTY>
+	<PROPERTY name="FC Interrupt count" units="" outputunits="" id="1117"></PROPERTY>
+	<PROPERTY name="FC C1 counts" units="" outputunits="" id="1118"></PROPERTY>
+	<PROPERTY name="FC C2 counts" units="" outputunits="" id="1119"></PROPERTY>
+	<PROPERTY name="FC Flow counts" units="" outputunits="" id="1120"></PROPERTY>
+	<PROPERTY name="FC Shield counts" units="" outputunits="" id="1121"></PROPERTY>
+	<PROPERTY name="FC Back pressure counts" units="" outputunits="" id="1122"></PROPERTY>
+	<PROPERTY name="FC Flow zero" units="" outputunits="" id="1123"></PROPERTY>
+	<PROPERTY name="FC Shield zero" units="" outputunits="" id="1124"></PROPERTY>
+	<PROPERTY name="FC Back pressure zero" units="" outputunits="" id="1125"></PROPERTY>
+	<PROPERTY name="FC Gas detect zero" units="" outputunits="" id="1126"></PROPERTY>
+	<PROPERTY name="FC Flow calibration He" units="" outputunits="" id="1127"></PROPERTY>
+	<PROPERTY name="FC Flow calibration N2" units="" outputunits="" id="1128"></PROPERTY>
+	<PROPERTY name="FC Shield calibration He" units="" outputunits="" id="1129"></PROPERTY>
+	<PROPERTY name="FC Shield calibration N2" units="" outputunits="" id="1130"></PROPERTY>
+
+
+	<PROPERTY name="AF Serial" units="" outputunits="" id="1200"></PROPERTY>
+	<PROPERTY name="AF Firmware" units="" outputunits="" id="1201"></PROPERTY>
+	<PROPERTY name="AF LN counts" units="" outputunits="" id="1202"></PROPERTY>
+	<PROPERTY name="AF LN level" units="c%" outputunits="%" id="1203"></PROPERTY>
+	<PROPERTY name="AF Calib low" units="" outputunits="" id="1204"></PROPERTY>
+	<PROPERTY name="AF Calib high" units="" outputunits="" id="1205"></PROPERTY>
+	<PROPERTY name="AF Head status" units="" outputunits="" id="1206"></PROPERTY>
+	<PROPERTY name="AF Refill level" units="c%" outputunits="%" id="1207"></PROPERTY>
+	<PROPERTY name="AF Stop level" units="c%" outputunits="%" id="1208"></PROPERTY>
+	<PROPERTY name="AF Mode" units="" outputunits="" id="1209"></PROPERTY>
+	<PROPERTY name="AF Solenoid status" units="" outputunits="" id="1210"></PROPERTY>
+	<PROPERTY name="AF Status" units="" outputunits="" id="1211"></PROPERTY>
+	<PROPERTY name="AF Time to fill" units="" outputunits="" id="1212"></PROPERTY>
+	<PROPERTY name="AF Calib status" units="" outputunits="" id="1213"></PROPERTY>
+	<PROPERTY name="AF Probe volts" units="" outputunits="" id="1214"></PROPERTY>
+	<PROPERTY name="AF Supply volts" units="" outputunits="" id="1215"></PROPERTY>
+	<PROPERTY name="AF Ref volts" units="" outputunits="" id="1216"></PROPERTY>
+	<PROPERTY name="AF Head temp" units="" outputunits="" id="1217"></PROPERTY>
+
+	<PROPERTY name="FP DHCP Config" units="" outputunits="" id="1300"></PROPERTY>
+	<PROPERTY name="FP IP Address 1" units="" outputunits="" id="1301"></PROPERTY>
+	<PROPERTY name="FP IP Address 2" units="" outputunits="" id="1302"></PROPERTY>
+	<PROPERTY name="FP Mask 1" units="" outputunits="" id="1303"></PROPERTY>
+	<PROPERTY name="FP Mask 2" units="" outputunits="" id="1304"></PROPERTY>
+	<PROPERTY name="FP Gateway 1" units="" outputunits="" id="1305"></PROPERTY>
+	<PROPERTY name="FP Gateway 2" units="" outputunits="" id="1306"></PROPERTY>
+	<PROPERTY name="FP DNS 1 1" units="" outputunits="" id="1307"></PROPERTY>
+	<PROPERTY name="FP DNS 1 2" units="" outputunits="" id="1308"></PROPERTY>
+	<PROPERTY name="FP DNS 2 1" units="" outputunits="" id="1309"></PROPERTY>
+	<PROPERTY name="FP DNS 2 2" units="" outputunits="" id="1310"></PROPERTY>
+	<PROPERTY name="FP MAC Address 1" units="" outputunits="" id="1311"></PROPERTY>
+	<PROPERTY name="FP MAC Address 2" units="" outputunits="" id="1312"></PROPERTY>
+	<PROPERTY name="FP MAC Address 3" units="" outputunits="" id="1313"></PROPERTY>
+	<PROPERTY name="FP Ethernet Firmware" units="" outputunits="" id="1314"></PROPERTY>
+	<PROPERTY name="FP Ethernet Settings" units="" outputunits="" id="1315"></PROPERTY>
+
+	<PROPERTY name="CD Serial" units="" outputunits="" id="1400"></PROPERTY>
+	<PROPERTY name="CD Firmware" units="" outputunits="" id="1401"></PROPERTY>
+	<PROPERTY name="CD Status" units="" outputunits="" id="1402"></PROPERTY>
+	<PROPERTY name="CD Saved state" units="" outputunits="" id="1403"></PROPERTY>
+	<PROPERTY name="CD Auto state" units="" outputunits="" id="1404"></PROPERTY>
+	<PROPERTY name="CD Fault state" units="" outputunits="" id="1405"></PROPERTY>
+	<PROPERTY name="CD State" units="" outputunits="" id="1406"></PROPERTY>
+	<PROPERTY name="CD Stepper state" units="" outputunits="" id="1407"></PROPERTY>
+	<PROPERTY name="CD High T trip" units="C" outputunits="C" id="1408"></PROPERTY>
+	<PROPERTY name="CD Low T trip" units="C" outputunits="C" id="1409"></PROPERTY>
+	<PROPERTY name="CD Temp" units="C" outputunits="C" id="1410"></PROPERTY>
+	<PROPERTY name="CD He return pressure" units="dbar" outputunits="bar" id="1411"></PROPERTY>
+	<PROPERTY name="CD He supply pressure" units="dbar" outputunits="bar" id="1412"></PROPERTY>
+	<PROPERTY name="CD Hours since service" units="hour" outputunits="hour" id="1413"></PROPERTY>
+	<PROPERTY name="CD Stepper 1 speed" units="rpm" outputunits="rpm" id="1414"></PROPERTY>
+	<PROPERTY name="CD Stepper 2 speed" units="rpm" outputunits="rpm" id="1415"></PROPERTY>
+	<PROPERTY name="CD PCSP 1" units="cV" outputunits="cV" id="1416"></PROPERTY>
+	<PROPERTY name="CD PCSP 2" units="cV" outputunits="cV" id="1417"></PROPERTY>
+	<PROPERTY name="CD Total hours" units="hour" outputunits="hour" id="1418"></PROPERTY>
+	<PROPERTY name="CD Boost speed 1" units="rpm" outputunits="rpm" id="1419"></PROPERTY>
+	<PROPERTY name="CD Boost time 1" units="min" outputunits="min" id="1420"></PROPERTY>
+	<PROPERTY name="CD Boost speed 2" units="rpm" outputunits="rpm" id="1421"></PROPERTY>
+	<PROPERTY name="CD Boost time 2" units="min" outputunits="min" id="1422"></PROPERTY>
+	<PROPERTY name="CD Steady speed 1" units="rpm" outputunits="rpm" id="1423"></PROPERTY>
+	<PROPERTY name="CD Steady speed 2" units="rpm" outputunits="rpm" id="1424"></PROPERTY>
+	<PROPERTY name="CD Boost count 1" units="min" outputunits="min" id="1425"></PROPERTY>
+	<PROPERTY name="CD Boost count 2" units="min" outputunits="min" id="1426"></PROPERTY>
+	<PROPERTY name="CD Trip time" units="min" outputunits="min" id="1427"></PROPERTY>
+	<PROPERTY name="CD Blowdown time" units="s" outputunits="s" id="1428"></PROPERTY>
+	<PROPERTY name="CD Blowdown space" units="hour" outputunits="hour" id="1429"></PROPERTY>
+	<PROPERTY name="CD Last trip" units="" outputunits="" id="1430"></PROPERTY>
+	<PROPERTY name="CD Low P warning standby" units="dbar" outputunits="bar" id="1431"></PROPERTY>
+	<PROPERTY name="CD Low P warning standby run" units="dbar" outputunits="bar" id="1432"></PROPERTY>
+	<PROPERTY name="CD Low P margin" units="dbar" outputunits="bar" id="1433"></PROPERTY>
+	<PROPERTY name="CD Coldhead hours" units="hour" outputunits="hour" id="1434"></PROPERTY>
+	<PROPERTY name="CD Adsorber hours" units="hour" outputunits="hour" id="1435"></PROPERTY>
+
+
+	<PROPERTY name="PU Serial" units="" outputunits="" id="1500"></PROPERTY>
+	<PROPERTY name="PU Firmware" units="" outputunits="" id="1501"></PROPERTY>
+	<PROPERTY name="PU Status" units="" outputunits="" id="1502"></PROPERTY>
+	<PROPERTY name="PU Board temp" units="C" outputunits="C" id="1503"></PROPERTY>
+	<PROPERTY name="PU Pump temp" units="cC" outputunits="C" id="1504"></PROPERTY>
+	<PROPERTY name="PU Set pressure" units="mbar" outputunits="mbar" id="1505"></PROPERTY>
+	<PROPERTY name="PU Delivery pressure" units="mbar" outputunits="mbar" id="1506"></PROPERTY>
+	<PROPERTY name="PU Pump speed" units="rpm" outputunits="rpm" id="1507"></PROPERTY>
+	<PROPERTY name="PU Pump drive" units="%" outputunits="%" id="1508"></PROPERTY>
+	<PROPERTY name="PU Pump current" units="mA" outputunits="mA" id="1509"></PROPERTY>
+
+	<PROPERTY name="PU Run mins lo" units="" outputunits="" id="1510"></PROPERTY>
+	<PROPERTY name="PU Run mins hi" units="" outputunits="" id="1511"></PROPERTY>
+	<PROPERTY name="PU Total mins lo" units="" outputunits="" id="1512"></PROPERTY>
+	<PROPERTY name="PU Total mins hi" units="" outputunits="" id="1513"></PROPERTY>
+
+	<PROPERTY name="PU Last alarm" units="" outputunits="" id="1514"></PROPERTY>
+	<PROPERTY name="PU Trip time" units="s" outputunits="s" id="1515"></PROPERTY>
+	<PROPERTY name="PU Supply voltage" units="V" outputunits="V" id="1516"></PROPERTY>
+	<PROPERTY name="PU Voltage band" units="V" outputunits="V" id="1517"></PROPERTY>
+	<PROPERTY name="PU Status" units="" outputunits="" id="1518"></PROPERTY>
+	<PROPERTY name="PU Total hours" units="hour" outputunits="hour" id="1519"></PROPERTY>
+
+	<PROPERTY name="FP Serial" units="" outputunits="" id="1600"></PROPERTY>
+	<PROPERTY name="FP Firmware" units="" outputunits="" id="1601"></PROPERTY>
+	<PROPERTY name="FP Screen saver time" units="" outputunits="" id="1602"></PROPERTY>
+	<PROPERTY name="FP Temp units" units="" outputunits="" id="1603"></PROPERTY>
+	<PROPERTY name="FP Favourite temp" units="cK" outputunits="K" id="1604"></PROPERTY>
+	<PROPERTY name="FP Favourite rate" units="K/hour" outputunits="K/hour" id="1605"></PROPERTY>
+	<PROPERTY name="FP Shutdown timer" units="s" outputunits="s" id="1606"></PROPERTY>
+	<PROPERTY name="AP Firmware" units="" outputunits="" id="1700"></PROPERTY>
+	<PROPERTY name="AP Smart pressure" units="mbar" outputunits="mbar" id="1701"></PROPERTY>
+	<PROPERTY name="DAU Serial" units="" outputunits="" id="1800"></PROPERTY>
+	<PROPERTY name="DAU Firmware" units="" outputunits="" id="1801"></PROPERTY>
+	<PROPERTY name="DAU Status" units="" outputunits="" id="1802"></PROPERTY>
+	<PROPERTY name="DAU Alarm" units="" outputunits="" id="1803"></PROPERTY>
+	<PROPERTY name="DAU Frequency" units="Hz" outputunits="Hz" id="1804"></PROPERTY>
+	<PROPERTY name="DAU AC voltage" units="cV" outputunits="V" id="1805"></PROPERTY>
+	<PROPERTY name="DAU DC voltage" units="cV" outputunits="V" id="1806"></PROPERTY>
+	<PROPERTY name="DAU Current" units="cA" outputunits="A" id="1807"></PROPERTY>
+	<PROPERTY name="DAU Temp" units="cC" outputunits="C" id="1808"></PROPERTY>
+	<PROPERTY name="DAU Pressure" units="mbar" outputunits="mbar" id="1809"></PROPERTY>
+	<PROPERTY name="DAU Last alarm" units="" outputunits="" id="1810"></PROPERTY>
+
+	<PROPERTY name="DAU Run mins lo" units="" outputunits="" id="1811"></PROPERTY>
+	<PROPERTY name="DAU Run min hi" units="" outputunits="" id="1812"></PROPERTY>
+	<PROPERTY name="DAU Total hours" units="hour" outputunits="hour" id="1813"></PROPERTY>
+	<PROPERTY name="DAU Total mins lo" units="" outputunits="" id="1814"></PROPERTY>
+	<PROPERTY name="DAU Total mins hi" units="" outputunits="" id="1815"></PROPERTY>
+	<PROPERTY name="DAU Last run" units="" outputunits="" id="1816"></PROPERTY>
+	<PROPERTY name="DAU Days off" units="" outputunits="" id="1817"></PROPERTY>
+
+
+	<PROPERTY name="CRT Tc" units="cK" outputunits="K" id="1900"></PROPERTY>
+	<PROPERTY name="CRT TcSet" units="cK" outputunits="K" id="1901"></PROPERTY>
+	<PROPERTY name="CRT Status" units="bits" outputunits="bits" id="1902"></PROPERTY>
+	<PROPERTY name="CRT Stop" units="" outputunits="" id="1903"></PROPERTY>
+
+
+	<PROPERTY name="Cryodrive state" units="" outputunits="" id="2000"></PROPERTY>
+	<PROPERTY name="Coldhead speed" units="rpm" outputunits="rpm" id="2001"></PROPERTY>
+	<PROPERTY name="Coldhead adjust" units="%" outputunits="%" id="2002"></PROPERTY>
+
+	<PROPERTY name="Coldhead temp" units="cK" outputunits="K" id="2010"></PROPERTY>
+	<PROPERTY name="Shield temp" units="cK" outputunits="K" id="2011"></PROPERTY>
+	<PROPERTY name="Vacuum gauge" units="mV" outputunits="mV" id="2012"></PROPERTY>
+	<PROPERTY name="Nozzle temp" units="cK" outputunits="K" id="2013"></PROPERTY>
+	<PROPERTY name="Sample heat" units="%" outputunits="%" id="2014"></PROPERTY>
+	<PROPERTY name="Coldhead heat" units="%" outputunits="%" id="2015"></PROPERTY>
+	<PROPERTY name="Shield heat" units="%" outputunits="%" id="2016"></PROPERTY>
+	<PROPERTY name="Nozzle heat" units="%" outputunits="%" id="2017"></PROPERTY>
+	<PROPERTY name="Vacuum power" units="" outputunits="" id="2018"></PROPERTY>
+	<PROPERTY name="Average sample heat" units="%" outputunits="%" id="2019"></PROPERTY>
+	<PROPERTY name="Average nozzle heat" units="%" outputunits="%" id="2020"></PROPERTY>
+
+	<PROPERTY name="Autofill mode" units="" outputunits="" id="2021"></PROPERTY>
+	<PROPERTY name="Autofill fill interval" units="hour" outputunits="hour" id="2022"></PROPERTY>
+	<PROPERTY name="Autofill time to fill" units="min" outputunits="min" id="2023"></PROPERTY>
+	<PROPERTY name="Autofill fill delay" units="min" outputunits="min" id="2024"></PROPERTY>
+
+
+	<PROPERTY name="Sample holder temp" units="cK" outputunits="K" id="2030"></PROPERTY>
+	<PROPERTY name="Cryostat temp" units="cK" outputunits="K" id="2031"></PROPERTY>
+	<PROPERTY name="Sample holder present" units="" outputunits="" id="2032"></PROPERTY>
+	<PROPERTY name="Selected sensor" units="" outputunits="" id="2033"></PROPERTY>
+
+	<PROPERTY name="Phase time elapsed" units="min" outputunits="min" id="2034"></PROPERTY>
+	<PROPERTY name="Suct set temp" units="" outputunits="" id="2035"></PROPERTY>
+	<PROPERTY name="Nozzle set temp" units="" outputunits="" id="2036"></PROPERTY>
+	<PROPERTY name="Status 1" units="" outputunits="" id="2037"></PROPERTY>
+	<PROPERTY name="Status 2" units="" outputunits="" id="2038"></PROPERTY>
+	<PROPERTY name="Status 3" units="" outputunits="" id="2039"></PROPERTY>
+	<PROPERTY name="Status 4" units="" outputunits="" id="2040"></PROPERTY>
+	<PROPERTY name="Collar temp" units="cK" outputunits="K" id="2041"></PROPERTY>
+	<PROPERTY name="Vacuum sensor" units="mbar" outputunits="mbar" id="2042"></PROPERTY>
+	<PROPERTY name="Outer flow" units="dl/min" outputunits="l/min" id="2043"></PROPERTY>
+	<PROPERTY name="Alarm level" units="" outputunits="" id="2044"></PROPERTY>
+	<PROPERTY name="Plateau duration" units="min" outputunits="min" id="2045"></PROPERTY>
+	<PROPERTY name="Phase start temp" units="cK" outputunits="K" id="2046"></PROPERTY>
+	<PROPERTY name="Phase elapsed" units="s" outputunits="s" id="2047"></PROPERTY>
+	<PROPERTY name="Phase remaining" units="s" outputunits="s" id="2048"></PROPERTY>
+	<PROPERTY name="Ambient pressure" units="mbar" outputunits="mbar" id="2500"></PROPERTY>
+	<PROPERTY name="Ambient humidity" units="%" outputunits="%" id="2501"></PROPERTY>
+	<PROPERTY name="Ambient temp" units="C" outputunits="C" id="2502"></PROPERTY>
+	<PROPERTY name="Live ADC 5" units="" outputunits="" id="2503"></PROPERTY>
+	<PROPERTY name="Live ADC 6" units="" outputunits="" id="2504"></PROPERTY>
+	<PROPERTY name="Live heater current 1" units="" outputunits="" id="2505"></PROPERTY>
+	<PROPERTY name="Live heater current 2" units="" outputunits="" id="2506"></PROPERTY>
+	<PROPERTY name="Live heater current 3" units="" outputunits="" id="2507"></PROPERTY>
+	<PROPERTY name="Live sensor current 1" units="" outputunits="" id="2508"></PROPERTY>
+	<PROPERTY name="Live sensor current 2" units="" outputunits="" id="2509"></PROPERTY>
+	<PROPERTY name="Live sensor current 3" units="" outputunits="" id="2510"></PROPERTY>
+	<PROPERTY name="Real time" units="" outputunits="" id="2511"></PROPERTY>
+	<PROPERTY name="Real date" units="" outputunits="" id="2512"></PROPERTY>
+	<PROPERTY name="Average evap heat" units="%" outputunits="%" id="2513"></PROPERTY>
+	<PROPERTY name="Unmapped gas temp" units="cK" outputunits="K" id="2514"></PROPERTY>
+	<PROPERTY name="Coldhead state" units="" outputunits="" id="2515"></PROPERTY>
+	<PROPERTY name="Service state" units="" outputunits="" id="2516"></PROPERTY>
+	<PROPERTY name="Last regen date" units="" outputunits="" id="2517"></PROPERTY>
+	<PROPERTY name="Days since regen" units="" outputunits="" id="2518"></PROPERTY>
+	<PROPERTY name="Shield flow mode" units="" outputunits="" id="2519"></PROPERTY>
+	<PROPERTY name="Shield flow requested" units="cl/min" outputunits="l/min" id="2520"></PROPERTY>
+
+	<PROPERTY name="Last run date" units="" outputunits="" id="2600"></PROPERTY>
+	<PROPERTY name="Last error date" units="" outputunits="" id="2601"></PROPERTY>
+	<PROPERTY name="Error status 1" units="" outputunits="" id="2602"></PROPERTY>
+	<PROPERTY name="Error status 2" units="" outputunits="" id="2603"></PROPERTY>
+	<PROPERTY name="Error status 3" units="" outputunits="" id="2604"></PROPERTY>
+	<PROPERTY name="Error status 4" units="" outputunits="" id="2605"></PROPERTY>
+	<PROPERTY name="Error gas heat I" units="" outputunits="" id="2606"></PROPERTY>
+	<PROPERTY name="Error gas heat V" units="" outputunits="" id="2607"></PROPERTY>
+	<PROPERTY name="Error evap heat I" units="" outputunits="" id="2608"></PROPERTY>
+	<PROPERTY name="Error evap heat V" units="" outputunits="" id="2609"></PROPERTY>
+	<PROPERTY name="Error suct heat I" units="" outputunits="" id="2610"></PROPERTY>
+	<PROPERTY name="Error suct heat V" units="" outputunits="" id="2611"></PROPERTY>
+	<PROPERTY name="Error ADC 5" units="" outputunits="" id="2612"></PROPERTY>
+	<PROPERTY name="Error ADC 6" units="" outputunits="" id="2613"></PROPERTY>
+	<PROPERTY name="Error SRB status" units="" outputunits="" id="2614"></PROPERTY>
+	<PROPERTY name="Error outer flow" units="cl/min" outputunits="l/min" id="2615"></PROPERTY>
+	<PROPERTY name="Error selected gas" units="" outputunits="" id="2616"></PROPERTY>
+	<PROPERTY name="Error detected gas" units="" outputunits="" id="2617"></PROPERTY>
+	<PROPERTY name="Error AF status" units="" outputunits="" id="2618"></PROPERTY>
+	<PROPERTY name="Error CD fault" units="" outputunits="" id="2619"></PROPERTY>
+	<PROPERTY name="Error water temp" units="C" outputunits="C" id="2620"></PROPERTY>
+	<PROPERTY name="Error He supply" units="dbar" outputunits="bar" id="2621"></PROPERTY>
+	<PROPERTY name="Error He return" units="dbar" outputunits="bar" id="2622"></PROPERTY>
+
+	<PROPERTY name="Stage 1 temp" units="cK" outputunits="K" id="3001"></PROPERTY>
+	<PROPERTY name="Stage 1 set temp" units="cK" outputunits="K" id="3002"></PROPERTY>
+	<PROPERTY name="Stage 1 heat" units="mW" outputunits="mW" id="3003"></PROPERTY>
+	<PROPERTY name="Stage 1 load" units="mW" outputunits="mW" id="3004"></PROPERTY>
+	<PROPERTY name="Stage 2 temp" units="cK" outputunits="K" id="3005"></PROPERTY>
+	<PROPERTY name="Stage 2 set temp" units="cK" outputunits="K" id="3006"></PROPERTY>
+	<PROPERTY name="Stage 2 heat" units="mW" outputunits="mW" id="3007"></PROPERTY>
+	<PROPERTY name="Stage 2 load" units="mW" outputunits="mW" id="3008"></PROPERTY>
+
+
+	<PROPERTY name="Manual heater 1" units="" outputunits="" id="4001"></PROPERTY>
+	<PROPERTY name="Manual heater 2" units="" outputunits="" id="4002"></PROPERTY>
+	<PROPERTY name="Manual heater 3" units="" outputunits="" id="4003"></PROPERTY>
+	<PROPERTY name="Manual flow" units="cl/min" outputunits="cl/min" id="4004"></PROPERTY>
+	<PROPERTY name="Manual shield flow" units="cl/min" outputunits="cl/min" id="4005"></PROPERTY>
+	<PROPERTY name="Manual coldhead speed" units="rpm" outputunits="rpm" id="4006"></PROPERTY>
+	<PROPERTY name="Manual coldhead temp" units="cK" outputunits="K" id="4007"></PROPERTY>
+	<PROPERTY name="Manual control flags" units="" outputunits="" id="4008"></PROPERTY>
+
+	<PROPERTY name="Comms packet size" units="" outputunits="" id="5000"></PROPERTY>
+	<PROPERTY name="Comms packet id" units="" outputunits="" id="5001"></PROPERTY>
+	<PROPERTY name="Comms packet checksum" units="" outputunits="" id="5002"></PROPERTY>
+
+	<PROPERTY name="SRB Serial number" units="" outputunits="" id="6000"></PROPERTY>
+	<PROPERTY name="SRB Firmware" units="" outputunits="" id="6001"></PROPERTY>
+	<PROPERTY name="SRB Error" units="" outputunits="" id="6002"></PROPERTY>
+	<PROPERTY name="SRB Peripherals" units="" outputunits="" id="6003"></PROPERTY>
+	<PROPERTY name="SRB Supply voltage" units="V" outputunits="V" id="6004"></PROPERTY>
+	<PROPERTY name="SRB Supply frequency" units="Hz" outputunits="Hz" id="6005"></PROPERTY>
+	<PROPERTY name="SRB Voltage band" units="V" outputunits="V" id="6006"></PROPERTY>
+	<PROPERTY name="SRB Output voltage" units="V" outputunits="V" id="6007"></PROPERTY>
+	<PROPERTY name="SRB Output current" units="mA" outputunits="A" id="6008"></PROPERTY>
+	<PROPERTY name="SRB AC output state" units="" outputunits="" id="6009"></PROPERTY>
+	<PROPERTY name="SRB DC output state" units="" outputunits="" id="6010"></PROPERTY>
+
+	<PROPERTY name="Temp units" units="" outputunits="" id="7000"></PROPERTY>
+	<PROPERTY name="Keyboard sounds" units="" outputunits="" id="7001"></PROPERTY>
+	<PROPERTY name="Coldhead LEDs" units="" outputunits="" id="7002"></PROPERTY>
+
+
+</LIST_OF_PROPERTIES>
+	
+	
+</OXCRYO_PROPERTIES>
